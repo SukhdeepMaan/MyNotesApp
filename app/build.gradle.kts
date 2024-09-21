@@ -59,13 +59,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    // hilt
+    // Hilt
     kapt(libs.dagger.hilt.compiler)
     implementation(libs.dagger.hilt)
     implementation(libs.androidx.hilt.navigation.compose)
-    //room
+
+    // Room
     implementation(libs.androidx.room.runtime)
-    annotationProcessor(libs.androidx.room.compiler)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 }

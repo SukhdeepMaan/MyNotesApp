@@ -53,13 +53,7 @@ class NotesViewModel @Inject constructor(
 
     fun insertNote(note: Notes) {
         viewModelScope.launch {
-            val result = noteRepository.insertNote(note)
-
-            when (result) {
-                is ResultState.Loading -> TODO()
-                is ResultState.Failure -> TODO()
-                is ResultState.Success -> TODO()
-            }
+                noteRepository.insertNote(note)
         }
     }
 
